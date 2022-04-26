@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "spring.employee.datasource.driver-class-name",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.employee.datasource.driver-class-name'"
+  },
+  {
+    "name": "spring.employee.datasource.jdbcUrl",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.employee.datasource.jdbcUrl'"
+  },
+  {
+    "name": "spring.employee.datasource.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.employee.datasource.username'"
+  }
+]}
