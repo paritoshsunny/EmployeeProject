@@ -23,7 +23,7 @@ public class EmployeeService {
 	private EmployeeRepository employeeRepository;
 
 	@Autowired
-	private AddressRepository addressRepository;
+	private AddressService addressService;
 
 	public CommonEmployeeResponse saveEmployee(Employee emp) {
 		try {
@@ -52,7 +52,7 @@ public class EmployeeService {
 				List<Address> a = emp.getAddresses();
 				List<Address> addrList = new ArrayList<>();
 				for (Address address : a) {
-					Address add = addressRepository.getAddressById(address.getAddId());
+					Address add = addressService.getAddressByAddId(address.getAddId());
 					add.setAddressLine1(address.getAddressLine1());
 					add.setAddressline2(address.getAddressline2());
 					add.setCity(address.getCity());

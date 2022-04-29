@@ -53,7 +53,6 @@ public class Employee implements Serializable{
 	private String email;
 	
 	@NotNull(message = "Employee should have some salary")
-	@NotEmpty(message = "Please Enter salary")
 	private Double salary;
 	
 	@OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)

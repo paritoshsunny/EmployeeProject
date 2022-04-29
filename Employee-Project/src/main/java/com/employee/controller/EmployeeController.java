@@ -1,5 +1,6 @@
 package com.employee.controller;
 
+import javax.annotation.security.RolesAllowed;
 import javax.validation.Valid;
 
 import org.slf4j.Logger;
@@ -26,6 +27,7 @@ public class EmployeeController {
 	private EmployeeService employeeService;
 	
 	@PostMapping("/save")
+//	@RolesAllowed("admin")
 	public ResponseEntity<CommonEmployeeResponse> saveEmployee(@Valid @RequestBody Employee emp) {
 		logger.trace("Inside saveEmployee controller");
 		CommonEmployeeResponse employeeResponse = employeeService.saveEmployee(emp);

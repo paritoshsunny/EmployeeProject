@@ -8,6 +8,6 @@ import com.employee.entity.Address;
 @Repository
 public interface AddressRepository extends JpaRepository<Address, Long>{
 
-	Address getAddressById(Long addId);
+	Address getAddressByAddId(Long addId);
 
 }
